@@ -4,4 +4,4 @@ Created on Feb 28, 2016
 @author: chunq
 '''
 
-print("hello from EPic")
+print("hello from Home")
