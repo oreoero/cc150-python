@@ -17,7 +17,7 @@ class AdvancedLinkedList(LinkedList):
 				prev.next = node.next
 			else:
 				tempList.append(node.data)
-			prev = node
+				prev = node
 			node = node.next
 		return
 	
@@ -25,6 +25,10 @@ if __name__ == "__main__":
 	testList = AdvancedLinkedList()
 	testList.append(LinkedNode(4))
 	testList.append(LinkedNode(4))
+	testList.append(LinkedNode(3))
+	testList.append(LinkedNode(3))
+	testList.append(LinkedNode(4))
+	testList.append(LinkedNode(1))
 	testList.removeDuplicate()
 	testList.view()
 			

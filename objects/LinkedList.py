@@ -58,7 +58,7 @@ class LinkedList(object):
 				print(loop.data, end = '=>')
 			loop = loop.next
 
-		print("Count:", list.count, end = ' ')
+		print("Count:", self.count, end = ' ')
 
 		return
 
