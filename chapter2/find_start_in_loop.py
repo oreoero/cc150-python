@@ -4,17 +4,21 @@ Given a circular linked list, implement an algorithm which returns node at the b
 @author: chunq
 '''
 
+from objects.LinkedNode import LinkedNode
 from objects.LinkedList import LinkedList
 
 def findStartNodeInLoop(testList):
     fastRunner = testList.head
     slowRunner = testList.head
     
-    while (fastRunner != slowRunner):
-        if (fastRunner.next is None ) or (slowRunner is None):
-            return None
+    while (fastRunner.next is not None):
         slowRunner = slowRunner.next
         fastRunner = fastRunner.next.next
+        if fastRunner == slowRunner:
+            break
+    
+    if fastRunner == None:
+        return None
         
     fastRunner = testList.head
     while (fastRunner != slowRunner):
@@ -22,4 +26,17 @@ def findStartNodeInLoop(testList):
         slowRunner = slowRunner.next
     
     return fastRunner
+
+if __name__ == "__main__":
+    testList = LinkedList()
+    testNode3 = LinkedNode(3)
+    testNode6 = LinkedNode(6)
+    testList.append(testNode6)
+    testList.append(LinkedNode(5))
+    testList.append(LinkedNode(4))
+    testList.append(testNode3)
+    testList.append(LinkedNode(2))
+    testList.append(LinkedNode(1))
+    testNode6.next = testNode3
+    print(findStartNodeInLoop(testList).data)
     

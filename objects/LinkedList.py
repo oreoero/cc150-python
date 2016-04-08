@@ -59,20 +59,3 @@ class LinkedList(object):
 		print("Count:", self.count, end = ' ')
 
 		return
-
-
-if __name__ == "__main__":
-	list = LinkedList()
-	list.append(LinkedNode(3))
-	list.append(LinkedNode(4))
-	list.append(LinkedNode(5))
-	list.view()
-	list.remove(LinkedNode(4))
-	list.view()
-	list.remove(LinkedNode(1))
-	list.view()
-	list.remove(LinkedNode(5))
-	list.view()
-	list.remove(LinkedNode(3))
-	list.view()
-	print(list.count)
