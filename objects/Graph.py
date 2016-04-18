@@ -11,18 +11,18 @@ class Graph(object):
     Graph object
     '''
 
-    def __init__(self):
+    def __init__(self, root = None):
         '''
         Constructor
         '''
-        self.head = None
+        self.root = root
         self.count = 0
     
     def traverseDFS(self):
         '''
         DFS
         '''
-        self._visitDFS(self.head)
+        self._visitDFS(self.root)
     
     def _visitDFS(self, currentNode):
         '''
@@ -42,7 +42,7 @@ class Graph(object):
         BFS
         '''
         queue = deque()
-        queue.append(self.head)
+        queue.append(self.root)
         while len(queue) > 0:
             currentNode = queue.popleft()
             print(currentNode.data)

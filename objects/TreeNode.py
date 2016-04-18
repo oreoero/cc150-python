@@ -19,24 +19,17 @@ class TreeNode(object):
         self.right = None
         return
     
-    def __repr__(self, level = 0):
-        ret = "\t" * level + repr(self.data) + "\n"
+    def __repr__(self, level = 0, left = False):
+        if level == 0:
+            ret = 'root: ' + str(self.data) + "\n"
+        else:
+            if left:
+                ret = "\t" * level + 'left: ' + str(self.data) + "\n"
+            else:
+                ret = "\t" * level + 'right: ' + str(self.data) + "\n"
+                
         if self.left is not None:
-            ret += self.left.__repr__(level + 1)
-        elif self.right is not None:
+            ret += self.left.__repr__(level + 1, True)
+        if self.right is not None:
             ret += self.right.__repr__(level + 1)
         return ret  
-    
-    def setLeft(self, left = None):
-        self.left = left
-        return
-    
-    def setRight(self, right = None):
-        self.right = right
-        return
-    
-    def getLeft(self):
-        return self.left
-    
-    def getRight(self):
-        return self.right

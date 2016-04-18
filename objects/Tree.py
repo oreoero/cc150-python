@@ -9,13 +9,11 @@ class Tree(object):
     Tree object
     '''
 
-
-    def __init__(self, head = None):
+    def __init__(self, root = None):
         '''
         Constructor
         '''
-        self.head = head
+        self.root = root
     
     def __repr__(self):
-        repr(self.head)
-     
+        return repr(self.root)
