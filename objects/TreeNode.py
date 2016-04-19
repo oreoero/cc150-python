@@ -10,23 +10,23 @@ class TreeNode(object):
     '''
 
 
-    def __init__(self, data):
+    def __init__(self, key):
         '''
         Constructor
         '''
-        self.data = data
+        self.key = key
         self.left = None
         self.right = None
         return
     
     def __repr__(self, level = 0, left = False):
         if level == 0:
-            ret = 'root: ' + str(self.data) + "\n"
+            ret = 'root: ' + str(self.key) + "\n"
         else:
             if left:
-                ret = "\t" * level + 'left: ' + str(self.data) + "\n"
+                ret = "\t" * level + 'left: ' + str(self.key) + "\n"
             else:
-                ret = "\t" * level + 'right: ' + str(self.data) + "\n"
+                ret = "\t" * level + 'right: ' + str(self.key) + "\n"
                 
         if self.left is not None:
             ret += self.left.__repr__(level + 1, True)
