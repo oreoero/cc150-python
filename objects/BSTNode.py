@@ -9,8 +9,10 @@ class BST(object):
         self.root = None
     
     def insert(self, newKey):
+        newNode = BSTNode(newKey)
         if self.root is None:
-            self.root = BSTNode(newKey)
+            self.root = newNode
+            newNode.parent = self.root            
         else:
             self.root.insert(newKey)
     
@@ -57,11 +59,11 @@ class BST(object):
 class BSTNode(object):
     '''
     Representation of a binary search tree node
-    Property: key, a left child, a right child, a parent node
+    Property: 
+            key, a left child, a right child, a parent node
     Method: search/insert/delete a value in its subtree
             view subTree
     '''
-
 
     def __init__(self, key):
         '''
@@ -76,20 +78,22 @@ class BSTNode(object):
         return str(self.key)
         
     def find(self, targetKey):
-        return self._findHelper(self, targetKey)
-    
-    def _findHelper(self, currentNode, targetKey):
         '''
         return the node that contains the target key
         '''
-        if currentNode is not None:
-            if targetKey == currentNode.key:
-                return currentNode
-            elif targetKey < currentNode.key:
-                return self._findHelper(currentNode.left, targetKey)
+        if targetKey == self.key:
+            return self
+        elif targetKey < self.key:
+            if self.left is not None:
+                return self.left.find(targetKey)
             else:
-                return self._findHelper(currentNode.right, targetKey)
-        return None
+                return None
+        else:
+            if self.right is not None:
+                return self.right.find(targetKey)
+            else:
+                return None
+        return self._findHelper(self, targetKey)
     
     def insert(self, newKey):
         '''
