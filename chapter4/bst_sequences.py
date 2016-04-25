@@ -25,8 +25,8 @@ def getBSTSequncesHelper(node, result):
         for right in rightResult:
             temp = []
             weave(left, right, [], temp)
-            for one in temp:
-                result.append(one)
+            for oneTemp in temp:
+                result.append(oneTemp)
     for oneResult in result:
         oneResult.insert(0, node)       
 
@@ -48,5 +48,7 @@ if __name__ == '__main__':
     testTree = BST()
     testTree.insert(5)
     testTree.insert(2)
+    testTree.insert(1)
+    testTree.insert(3)
     testTree.insert(6)
     print(getBSTSequences(testTree))
