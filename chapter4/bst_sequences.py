@@ -9,18 +9,15 @@ this tree.
 '''
 
 def getBSTSequences(tree):
-    result = []
-    getBSTSequncesHelper(tree.root, result)
-    return result
+    return getBSTSequncesHelper(tree.root)
 
-def getBSTSequncesHelper(node, result):
+def getBSTSequncesHelper(node):
+    result = []
     if node is None:
         result.append([])
-        return
-    leftResult = []
-    rightResult = []
-    getBSTSequncesHelper(node.left, leftResult)
-    getBSTSequncesHelper(node.right, rightResult)
+        return result
+    leftResult = getBSTSequncesHelper(node.left)
+    rightResult = getBSTSequncesHelper(node.right)
     for left in leftResult:
         for right in rightResult:
             temp = []
@@ -28,7 +25,8 @@ def getBSTSequncesHelper(node, result):
             for oneTemp in temp:
                 result.append(oneTemp)
     for oneResult in result:
-        oneResult.insert(0, node)       
+        oneResult.insert(0, node)  
+    return result     
 
 def weave(list1, list2, prehend, result):
     if (len(list1) == 0) or (len(list2) == 0):
@@ -49,6 +47,5 @@ if __name__ == '__main__':
     testTree.insert(5)
     testTree.insert(2)
     testTree.insert(1)
-    testTree.insert(3)
     testTree.insert(6)
     print(getBSTSequences(testTree))
