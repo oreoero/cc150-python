@@ -22,6 +22,4 @@ def clearRowColumnInMatrix(matrix):
     return matrix
 
 if __name__ == "__main__":
-    print(clearRowColumnInMatrix([[1,2,3],[1,0,3],[3,3,3]]))
-
-                
+    print(clearRowColumnInMatrix([[1,2,3],[1,0,3],[3,3,3]]))                

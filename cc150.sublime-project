@@ -1,0 +1,20 @@
+{
+	"folders":
+	[
+		{
+			"path": "."
+		},
+	],
+	"build_systems":
+	[
+    	{
+        	"name": "Python",
+        	"shell_cmd": "python -u \"$file\"",
+        	"env": {
+           			 "PYTHONPATH": "C:\\Users\\chunq\\OneDrive\\Documents\\Workspace\\cc150-python"
+        			},
+        	"file_regex": "^[ ]*File \"(...*?)\", line ([0-9]*)",
+        	"selector": "source.python"
+    	}
+	]
+}

@@ -1,0 +1,338 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"rot",
+				"rotate2DArray"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "chapter1/clear_row_column_in_2D_array.py",
+			"settings":
+			{
+				"buffer_size": 813,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Users/chunq/OneDrive/Documents/GitHub/cc150-python/.gitignore",
+			"settings":
+			{
+				"buffer_size": 998,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "Python",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				]
+			],
+			[
+				"Packages/Python/Python.sublime-build",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Python",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				]
+			],
+			[
+				"Python",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"install",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 392.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"python ToGlory.py",
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/Users/chunq/OneDrive/Documents/Workspace/cc150-python/chapter1",
+		"/C/Users/chunq/OneDrive/Documents/Workspace/cc150-python/chapter2"
+	],
+	"file_history":
+	[
+		"/C/Users/chunq/OneDrive/Documents/Workspace/cc150-python/chapter2/find_nth_last_node.py",
+		"/E/Documents/Fountain/Jobs/Python基础教程源码/Chapter04/listing4-1.py",
+		"/C/Users/chunq/OneDrive/Documents/Workspace/cc150-python/cc150.sublime-project",
+		"/C/Users/chunq/AppData/Roaming/Sublime Text 3/Packages/Package Control/Package Control.sublime-settings",
+		"/C/Users/chunq/AppData/Roaming/Sublime Text 3/Packages/User/Package Control.sublime-settings",
+		"/C/Users/chunq/OneDrive/Documents/Workspace/cc150-python/chapter2/__init__.py",
+		"/C/Users/chunq/OneDrive/Documents/Workspace/cc150-python/__int__.py",
+		"/C/Users/chunq/OneDrive/Documents/Workspace/cc150-python/chapter3/animal_shelter.py",
+		"//",
+		"/C/Users/chunq/OneDrive/Documents/Workspace/cc150-python/chapter2/romove_duplicate_nodes.py",
+		"/C/Users/chunq/OneDrive/Documents/GitHub/cc150/cc150/src/2.6-findListLoop.java",
+		"/C/Users/chunq/OneDrive/Documents/Workspace/cc150-python/objects/link_node.py",
+		"/C/Users/chunq/OneDrive/Documents/Workspace/cc150-python/objects/list.py",
+		"/C/Users/chunq/OneDrive/Documents/Workspace/cc150-python/.gitignore",
+		"/C/Users/chunq/OneDrive/Documents/Workspace/cc150-python/objects/__init__.py",
+		"/C/Users/chunq/OneDrive/Documents/Workspace/cc150-python/objects/list",
+		"/C/Users/chunq/OneDrive/Documents/Workspace/cc150-python/.project",
+		"/C/Users/chunq/OneDrive/Documents/Workspace/cc150-python/.pydevproject",
+		"/C/Users/chunq/OneDrive/Documents/Visual Studio 2015/Projects/LeetPython/ToGlory/ToGlory/isRotateString.py",
+		"/C/Users/chunq/OneDrive/Documents/Visual Studio 2015/Projects/LeetPython/ToGlory/ToGlory/rotateAry.py",
+		"/C/Users/chunq/OneDrive/Documents/Visual Studio 2015/Projects/LeetPython/ToGlory/ToGlory/checkZeroInArray.py",
+		"/C/Users/chunq/OneDrive/Documents/Java workspace/cc150-python/Chapter1/rotate_2D_array.py",
+		"/C/Users/chunq/OneDrive/Documents/Visual Studio 2015/Projects/LeetPython/ToGlory/ToGlory/ToGlory.py",
+		"/E/Documents/New Jump/Pursuit (out of college)/Interviews/CTCI150/CC150-java/2.6-findListLoop.java",
+		"/E/Documents/New Jump/Pursuit (out of college)/Interviews/CTCI150/CC150-java/4.5-isBinaryTree.java",
+		"/C/Users/chunq/OneDrive/Documents/Java workspace/cc150/.project",
+		"/C/Users/chunq/OneDrive/Documents/Java workspace/cc150/.classpath",
+		"/E/Documents/New Jump/CC150/Java/1.4-replaceSpace.java",
+		"/C/Users/chunq/OneDrive/Documents/Visual Studio 2015/Projects/LeetPython/ToGlory/ToGlory/TowerOfHanoi.py",
+		"/C/Users/chunq/OneDrive/Documents/Visual Studio 2015/Projects/LeetPython/ToGlory/ToGlory/linkList.py",
+		"/I/Useful Tools - 装机必备/wireless2.bat",
+		"/I/Useful Tools - 装机必备/注册激活说明.txt",
+		"/C/Users/chunq/AppData/Roaming/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/C/Users/chunq/AppData/Roaming/Sublime Text 3/Packages/User/Default (Windows).sublime-keymap"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 90.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"project",
+			".project",
+			"build",
+			"offside",
+			"moveOnePosition",
+			"rotateOneElement",
+			"():"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"offset",
+			"moveOneElement",
+			"moveOnePosition"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "chapter1/clear_row_column_in_2D_array.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 813,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								797,
+								797
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/C/Users/chunq/OneDrive/Documents/GitHub/cc150-python/.gitignore",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 998,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								991,
+								998
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 955.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 149.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "Python",
+	"project": "cc150.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 184.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
