@@ -12,7 +12,7 @@ class AdvancedLinkedList(LinkedList):
 		node = self.head
 		prev = self.head
 		tempList = []
-		while node is not None:
+		while node:
 			if node.data in tempList:
 				prev.next = node.next
 			else:

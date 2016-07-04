@@ -16,7 +16,7 @@ class BST(Tree):
         newNode = TreeNode(key)
         newNodeParent = None
         searchNode = self.root
-        while searchNode is not None:
+        while searchNode:
             newNodeParent = searchNode
             if key == searchNode.key:
                 return
@@ -35,7 +35,7 @@ class BST(Tree):
         return self._findHelper(self.root, target) == None
     
     def _findHelper(self, current, target):
-        while current is not None:
+        while current:
             if current.key == target:
                 return current
             elif target < current.key:
@@ -47,7 +47,7 @@ class BST(Tree):
     def delete(self, target):
         deleteNode = self.root
         deleteNodeParent = None
-        while deleteNode is not None:
+        while deleteNode:
             if deleteNode.key == target:
                 break
             deleteNodeParent = deleteNode
@@ -63,7 +63,7 @@ class BST(Tree):
                 deleteNodeParent.right = deleteNode.left or deleteNode.right
         else:
             successorNode = deleteNode.right
-            while successorNode.left is not None:
+            while successorNode.left:
                 successorParentNode = successorNode
                 successorNode = successorNode.left
             deleteNode.key = successorNode.key

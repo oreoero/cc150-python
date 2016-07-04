@@ -20,7 +20,7 @@ class AdvancedLinkedList(LinkedList):
             else:
                 first = first.next
         
-        while first is not None:
+        while first:
             first = first.next
             second = second.next
         

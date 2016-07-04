@@ -9,7 +9,7 @@ class LinkedList(object):
 			return True
 		loop = self.head
 
-		while loop is not None:
+		while loop:
 			if loop.data == node.data:
 				return True
 			else:
@@ -24,7 +24,7 @@ class LinkedList(object):
 		loop = self.head
 		prev = self.head
 
-		while loop is not None:
+		while loop:
 			if loop.data == node.data:
 				if loop == self.head:
 					self.head = loop.next
@@ -49,7 +49,7 @@ class LinkedList(object):
 		loop = self.head
 		print("Head:", end = ' ')
 
-		while loop is not None:
+		while loop:
 			if loop.next is None:
 				print(loop.data)
 			else:

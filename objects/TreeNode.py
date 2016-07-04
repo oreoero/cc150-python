@@ -28,8 +28,8 @@ class TreeNode(object):
             else:
                 ret = "\t" * level + 'right: ' + str(self.key) + "\n"
                 
-        if self.left is not None:
+        if self.left:
             ret += self.left.__repr__(level + 1, True)
-        if self.right is not None:
+        if self.right:
             ret += self.right.__repr__(level + 1)
         return ret  

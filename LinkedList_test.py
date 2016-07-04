@@ -20,6 +20,4 @@ if __name__ == "__main__":
     testList.view()
     testList.remove(LinkedNode(3))
     testList.view()
-    testList.remove(LinkedNode(3))
-    testList.view()
     print(testList.count)

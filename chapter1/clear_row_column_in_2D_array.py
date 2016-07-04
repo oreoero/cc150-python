@@ -17,7 +17,7 @@ def clearRowColumnInMatrix(matrix):
                 
     for row in range(0, len(matrix)):
         for column in range(0, len(matrix[row])):
-            if rowHelper[row] ^ columnHelper[column]:
+            if rowHelper[row] or columnHelper[column]:
                 matrix[row][column] = 0
     return matrix
 

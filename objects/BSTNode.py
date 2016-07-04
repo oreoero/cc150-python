@@ -10,21 +10,21 @@ class BST(object):
     
     def insert(self, newKey):
         newNode = BSTNode(newKey)
-        if self.root is None:
-            self.root = newNode
-            newNode.parent = self.root            
+        if self.root:
+            self.root.insert(newKey)      
         else:
-            self.root.insert(newKey)
+            self.root = newNode
+            newNode.parent = self.root      
     
     def find(self, targetKey):
-        if self.root is not None:
+        if self.root:
             return self.root.find(targetKey)
         else:
             return None
         
     def delete(self, keyToDelete):
         nodeToDelete = self.find(keyToDelete)
-        if nodeToDelete is not None:
+        if nodeToDelete:
             nodeToDelete.delete()
     
     def __str__(self):
@@ -41,7 +41,7 @@ class BST(object):
                 left_lines.append(' ' * left_width)
             while len(right_lines) < len(left_lines):
                 right_lines.append(' ' * right_width)
-            if (middle - len(label)) % 2 == 1 and node.parent is not None and \
+            if (middle - len(label)) % 2 == 1 and node.parent and \
                node is node.parent.left and len(label) < middle:
                 label += '.'
             label = label.center(middle, '.')
@@ -84,16 +84,15 @@ class BSTNode(object):
         if targetKey == self.key:
             return self
         elif targetKey < self.key:
-            if self.left is not None:
+            if self.left:
                 return self.left.find(targetKey)
             else:
                 return None
         else:
-            if self.right is not None:
+            if self.right:
                 return self.right.find(targetKey)
             else:
                 return None
-        return self._findHelper(self, targetKey)
     
     def insert(self, newKey):
         '''
@@ -102,19 +101,19 @@ class BSTNode(object):
         if newKey == self.key:
             return
         elif newKey < self.key:
-            if self.left is None:
+            if self.left:
+                self.left.insert(newKey)
+            else:
                 newNode = BSTNode(newKey)
                 self.left = newNode
                 newNode.parent = self
-            else:
-                self.left.insert(newKey)
         else:
-            if self.right is None:
+            if self.right:
+                self.right.insert(newKey)
+            else:
                 newNode = BSTNode(newKey)
                 self.right = newNode
                 newNode.parent = self
-            else:
-                self.right.insert(newKey)
                 
     def delete(self):
         if self.left is None or self.right is None:
@@ -133,11 +132,11 @@ class BSTNode(object):
         '''
         return the node that contains the next largest number in the subtree
         '''
-        if self.right is not None:
+        if self.right:
             return self.right.minimum()
         else:
             searchNode = self
-            while searchNode is not None and searchNode == searchNode.parent.right:
+            while searchNode and searchNode == searchNode.parent.left:
                 searchNode = searchNode.parent
             return searchNode          
     
@@ -146,7 +145,7 @@ class BSTNode(object):
         According to BST's property, the left most leave in the subtree is the minimum
         return the reference to the minimum node, not the value
         '''
-        if self.left is not None:
+        if self.left:
             return self.left.minimum()
         else:
             return self
@@ -167,6 +166,5 @@ if __name__ == '__main__':
     print(testTree)
     testTree.delete(12)
     print(testTree)
-    
         
         

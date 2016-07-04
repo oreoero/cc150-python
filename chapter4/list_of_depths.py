@@ -16,25 +16,25 @@ def listOfDepthsHelper(node, level, result):
     if len(result) == level:
         result.append([])
     result[level].append(node.key)
-    if node.left is not None:
+    if node.left:
         listOfDepthsHelper(node.left, level + 1, result)
-    if node.right is not None:
+    if node.right:
         listOfDepthsHelper(node.right, level + 1, result)
 
 def listOfDepthsBFS(tree):
     result = []
     newLevel = []
     previousLevel = []
-    if tree.root is not None:
+    if tree.root:
         newLevel.append(tree.root)
     while len(newLevel) > 0:
         result.append(newLevel)
         previousLevel = newLevel
         newLevel = []
         for node in previousLevel:
-            if node.left is not None:
+            if node.left:
                 newLevel.append(node.left)
-            if node.right is not None:
+            if node.right:
                 newLevel.append(node.right)
     return result
     

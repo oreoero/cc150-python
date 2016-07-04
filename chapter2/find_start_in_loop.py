@@ -11,7 +11,7 @@ def findStartNodeInLoop(testList):
     fastRunner = testList.head
     slowRunner = testList.head
     
-    while (fastRunner.next is not None):
+    while fastRunner.next:
         slowRunner = slowRunner.next
         fastRunner = fastRunner.next.next
         if fastRunner == slowRunner:
