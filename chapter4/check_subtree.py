@@ -10,24 +10,35 @@ That is, if you cut off the tree at node n, the two trees would be identical.
 @author: chunq
 '''
 
-def isSubTree(T1, T2):
-	return isSubTree(T1.root, T2)
+from objects.BST import BST
 
-def isSubTreeHelper(node, T2)
+def isSubTree(T1, T2):
+	return isSubTreeHelper(T1.root, T2)
+
+def isSubTreeHelper(node, T2):
 	if node is None:
 		return False
 	if isIdentical(node, T2.root):
 		return True
-	return isIdentical(node.left, T2.root) or isIdentical(node.right, T2.root)
+	return isSubTreeHelper(node.left, T2) or isSubTreeHelper(node.right, T2)
 
-
-def isIdentical(node1, node2)
+def isIdentical(node1, node2):
+	if node1 and node2:
+		return True
 	if node1 is None or node2 is None:
 		return False
 	if node1.key != node2.key:
-		retrun False
+		return False
 	return isIdentical(node1.left, node2.left) and isIdentical(node1.right, node2.right)
 
 
 if __name__ == '__main__':
-    pass
+    testT1 = BST()
+    testT1.insert(1)
+    testT1.insert(2)
+    print(testT1)
+    print()
+    testT2 = BST()
+    testT2.insert(2)
+    print(testT2)
+    print(isSubTree(testT1, testT2))
