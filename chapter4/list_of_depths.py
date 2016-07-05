@@ -39,7 +39,7 @@ def listOfDepthsBFS(tree):
     return result
     
 def test():
-    from objects.BSTNode import BST
+    from objects.BST import BST
     testTree = BST()
     testTree.insert(5)
     testTree.insert(3)

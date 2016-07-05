@@ -7,7 +7,7 @@ write an algorithm to create a binary search tree with minimal height.
 @author: chunq
 '''
 
-from objects.BSTNode import BST
+from objects.BST import BST
 
 def minimalHeight(sortedList):
     tree = BST()

@@ -28,7 +28,7 @@ def getFirstCommonAncestorHelper(ancestorNode, descendant1, descendant2):
         return ancestorNode
 
 if __name__ == '__main__':
-    from objects.BSTNode import BST
+    from objects.BST import BST
     testTree = BST()
     testTree.insert(5)
     testTree.insert(2)

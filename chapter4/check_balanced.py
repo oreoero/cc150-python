@@ -25,7 +25,7 @@ def getHeight(node):
     return max(rightHeight, leftHeight) + 1
     
 if __name__ == '__main__':    
-    from objects.BSTNode import BST
+    from objects.BST import BST
     testTree = BST()
     testTree.insert(5)
     testTree.insert(3)

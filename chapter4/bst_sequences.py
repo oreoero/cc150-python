@@ -41,11 +41,10 @@ def weave(list1, list2, prehend, result):
         prehend.pop()
 
 if __name__ == '__main__':
-    from objects.BSTNode import BST
+    from objects.BST import BST
     testTree = BST()
     testTree.insert(5)
     testTree.insert(2)
     testTree.insert(1)
     testTree.insert(3)
-    testTree.insert(6)
     print(getBSTSequences(testTree))

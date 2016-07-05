@@ -6,7 +6,7 @@ Validate BST: Implement a function to check if a binary tree is a binary search 
 @author: chunq
 '''
 
-from objects.BSTNode import BST
+from objects.BST import BST
 import sys
 
 def validateBST(tree):
