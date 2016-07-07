@@ -14,7 +14,7 @@ class RandomBST(object):
 		self.count = 0
 
 	def getRandomNode(self):
-		prob = randint(0, 99) / 100 * self.count
+		prob = randint(0, 99) / 100
 		if self.root:
 			return self.root.getRandomNode(prob)
 		else:
@@ -48,30 +48,15 @@ class RandomBSTNode (BSTNode):
 		rightTotal = self.right.count if self.right else 0
 		total = leftTotal + rightTotal + 1
 
-		if prob < 1:
+		if prob * total < 1:
 			return self
-		elif prob < 1 + leftTotal:
+		elif prob * total < 1 + leftTotal:
 			return self.left.getRandomNode(prob / total * (total - 1 - rightTotal))
 		else:
 			return self.right.getRandomNode(prob / total * (total - 1 - leftTotal))
 
 	def insert(self, key):
-		if self.key == key:
-			return
-		elif self.key < key:
-			if self.right:
-				self.right.insert(key)
-			else:
-				newNode = RandomBSTNode(key)
-				newNode.parent = self
-				self.right = newNode
-		else:
-			if self.left:
-				self.left.insert(key)
-			else:
-				newNode = RandomBSTNode(key)
-				newNode.parent = self
-				self.left = newNode
+		super.insert(key)
 		self.count += 1
 
 	def find(self, key):
