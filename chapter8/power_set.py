@@ -60,11 +60,11 @@ if __name__ == '__main__':
 
 	#template method
 	print()
-	print(getPowerSetTemplate(set))
+	getPowerSetTemplate(set)
 
 	#unique power set template
 	print()
 	set = [1,1,2,2]
-	print(getUniquePowerSet(set))
+	getUniquePowerSet(set)
 
 
